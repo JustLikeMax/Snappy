@@ -1,0 +1,83 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "logout": "Logout",
+        "confirm": "Confirm",
+        "error": "Error",
+        "success": "Success"
+    },
+    "auth": {
+        "login": {
+            "title": "Welcome Back",
+            "subtitle": "Sign in to your account",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Enter your email",
+            "passwordLabel": "Password",
+            "passwordPlaceholder": "Enter your password",
+            "loginButton": "Sign In",
+            "registerLink": "Don't have an account? Sign up",
+            "missingInfo": "Missing Information",
+            "missingInfoMessage": "Please enter both email and password.",
+            "invalidCredentials": "Invalid email or password"
+        },
+        "register": {
+            "title": "Create Account",
+            "subtitle": "Join Snappy today",
+            "firstNameLabel": "First Name",
+            "firstNamePlaceholder": "Enter your first name",
+            "lastNameLabel": "Last Name",
+            "lastNamePlaceholder": "Enter your last name",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Enter your email",
+            "passwordLabel": "Password",
+            "passwordPlaceholder": "Enter your password",
+            "confirmPasswordLabel": "Confirm Password",
+            "confirmPasswordPlaceholder": "Confirm your password",
+            "registerButton": "Create Account",
+            "loginLink": "Already have an account? Sign in",
+            "missingEmail": "Please enter your email address.",
+            "invalidEmail": "Please enter a valid email address.",
+            "missingPassword": "Please enter a password.",
+            "weakPassword": "Password must be at least 8 characters long.",
+            "passwordMismatch": "Passwords do not match.",
+            "missingFirstName": "Please enter your first name."
+        }
+    },
+    "profile": {
+        "title": "Profile",
+        "information": "Information",
+        "settings": "Settings",
+        "appearance": "Appearance",
+        "language": "Language",
+        "selectLanguage": "Select Language",
+        "theme": "Theme",
+        "theme.light": "Light",
+        "theme.dark": "Dark",
+        "theme.system": "System",
+        "theme.lightDescription": "Use light mode",
+        "theme.darkDescription": "Use dark mode",
+        "theme.systemDescription": "Follow system preference",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "Enter your first name",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Enter your last name",
+        "age": "Age",
+        "agePlaceholder": "Enter your age",
+        "bio": "Bio",
+        "bioPlaceholder": "Tell us about yourself",
+        "location": "Location",
+        "locationPlaceholder": "Enter your location",
+        "yearsOld": "{{age}} years old",
+        "memberSince": "Member since {{date}}",
+        "editProfile": "Edit Profile",
+        "logoutTitle": "Logout",
+        "logoutMessage": "Are you sure you want to logout from your account?"
+    },
+    "index": {
+        "loading": "Loading your profile..."
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "common": {
+        "loading": "Chargement...",
+        "save": "Enregistrer",
+        "saving": "Enregistrement...",
+        "cancel": "Annuler",
+        "edit": "Modifier",
+        "logout": "Déconnexion",
+        "confirm": "Confirmer",
+        "error": "Erreur",
+        "success": "Succès"
+    },
+    "auth": {
+        "login": {
+            "title": "Bon Retour",
+            "subtitle": "Connectez-vous à votre compte",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Entrez votre email",
+            "passwordLabel": "Mot de passe",
+            "passwordPlaceholder": "Entrez votre mot de passe",
+            "loginButton": "Se Connecter",
+            "registerLink": "Pas de compte ? Inscrivez-vous",
+            "missingInfo": "Informations Manquantes",
+            "missingInfoMessage": "Veuillez entrer votre email et mot de passe.",
+            "invalidCredentials": "Email ou mot de passe invalide"
+        },
+        "register": {
+            "title": "Créer un Compte",
+            "subtitle": "Rejoignez Snappy aujourd'hui",
+            "firstNameLabel": "Prénom",
+            "firstNamePlaceholder": "Entrez votre prénom",
+            "lastNameLabel": "Nom",
+            "lastNamePlaceholder": "Entrez votre nom",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Entrez votre email",
+            "passwordLabel": "Mot de passe",
+            "passwordPlaceholder": "Entrez votre mot de passe",
+            "confirmPasswordLabel": "Confirmer le Mot de Passe",
+            "confirmPasswordPlaceholder": "Confirmez votre mot de passe",
+            "registerButton": "Créer un Compte",
+            "loginLink": "Déjà un compte ? Connectez-vous",
+            "missingEmail": "Veuillez entrer votre adresse email.",
+            "invalidEmail": "Veuillez entrer une adresse email valide.",
+            "missingPassword": "Veuillez entrer un mot de passe.",
+            "weakPassword": "Le mot de passe doit contenir au moins 8 caractères.",
+            "passwordMismatch": "Les mots de passe ne correspondent pas.",
+            "missingFirstName": "Veuillez entrer votre prénom."
+        }
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Informations",
+        "settings": "Paramètres",
+        "appearance": "Apparence",
+        "language": "Langue",
+        "selectLanguage": "Sélectionner la Langue",
+        "theme": "Thème",
+        "theme.light": "Clair",
+        "theme.dark": "Sombre",
+        "theme.system": "Système",
+        "theme.lightDescription": "Utiliser le mode clair",
+        "theme.darkDescription": "Utiliser le mode sombre",
+        "theme.systemDescription": "Suivre les préférences système",
+        "firstName": "Prénom",
+        "firstNamePlaceholder": "Entrez votre prénom",
+        "lastName": "Nom",
+        "lastNamePlaceholder": "Entrez votre nom",
+        "age": "Âge",
+        "agePlaceholder": "Entrez votre âge",
+        "bio": "Bio",
+        "bioPlaceholder": "Parlez-nous de vous",
+        "location": "Lieu",
+        "locationPlaceholder": "Entrez votre lieu",
+        "yearsOld": "{{age}} ans",
+        "memberSince": "Membre depuis {{date}}",
+        "editProfile": "Modifier le Profil",
+        "logoutTitle": "Déconnexion",
+        "logoutMessage": "Êtes-vous sûr de vouloir vous déconnecter ?"
+    },
+    "index": {
+        "loading": "Chargement de votre profil..."
+    }
+}

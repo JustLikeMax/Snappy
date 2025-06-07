@@ -1,8 +1,8 @@
-# Welcome to your Expo app 👋
+# Welcome to your Expo app
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Modern Tab Design ✨
+## Modern Tab Design
 
 The app features a modern, professional tab bar design with:
 

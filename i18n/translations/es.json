@@ -1,0 +1,83 @@
+{
+    "common": {
+        "loading": "Cargando...",
+        "save": "Guardar",
+        "saving": "Guardando...",
+        "cancel": "Cancelar",
+        "edit": "Editar",
+        "logout": "Cerrar sesión",
+        "confirm": "Confirmar",
+        "error": "Error",
+        "success": "Éxito"
+    },
+    "auth": {
+        "login": {
+            "title": "Bienvenido de Vuelta",
+            "subtitle": "Inicia sesión en tu cuenta",
+            "emailLabel": "Correo electrónico",
+            "emailPlaceholder": "Ingresa tu correo electrónico",
+            "passwordLabel": "Contraseña",
+            "passwordPlaceholder": "Ingresa tu contraseña",
+            "loginButton": "Iniciar Sesión",
+            "registerLink": "¿No tienes cuenta? Regístrate",
+            "missingInfo": "Información Faltante",
+            "missingInfoMessage": "Por favor ingresa tu correo electrónico y contraseña.",
+            "invalidCredentials": "Correo electrónico o contraseña inválidos"
+        },
+        "register": {
+            "title": "Crear Cuenta",
+            "subtitle": "Únete a Snappy hoy",
+            "firstNameLabel": "Nombre",
+            "firstNamePlaceholder": "Ingresa tu nombre",
+            "lastNameLabel": "Apellido",
+            "lastNamePlaceholder": "Ingresa tu apellido",
+            "emailLabel": "Correo electrónico",
+            "emailPlaceholder": "Ingresa tu correo electrónico",
+            "passwordLabel": "Contraseña",
+            "passwordPlaceholder": "Ingresa tu contraseña",
+            "confirmPasswordLabel": "Confirmar Contraseña",
+            "confirmPasswordPlaceholder": "Confirma tu contraseña",
+            "registerButton": "Crear Cuenta",
+            "loginLink": "¿Ya tienes cuenta? Inicia sesión",
+            "missingEmail": "Por favor ingresa tu correo electrónico.",
+            "invalidEmail": "Por favor ingresa un correo electrónico válido.",
+            "missingPassword": "Por favor ingresa una contraseña.",
+            "weakPassword": "La contraseña debe tener al menos 8 caracteres.",
+            "passwordMismatch": "Las contraseñas no coinciden.",
+            "missingFirstName": "Por favor ingresa tu nombre."
+        }
+    },
+    "profile": {
+        "title": "Perfil",
+        "information": "Información",
+        "settings": "Configuración",
+        "appearance": "Apariencia",
+        "language": "Idioma",
+        "selectLanguage": "Seleccionar Idioma",
+        "theme": "Tema",
+        "theme.light": "Claro",
+        "theme.dark": "Oscuro",
+        "theme.system": "Sistema",
+        "theme.lightDescription": "Usar modo claro",
+        "theme.darkDescription": "Usar modo oscuro",
+        "theme.systemDescription": "Seguir configuración del sistema",
+        "firstName": "Nombre",
+        "firstNamePlaceholder": "Ingresa tu nombre",
+        "lastName": "Apellido",
+        "lastNamePlaceholder": "Ingresa tu apellido",
+        "age": "Edad",
+        "agePlaceholder": "Ingresa tu edad",
+        "bio": "Biografía",
+        "bioPlaceholder": "Cuéntanos sobre ti",
+        "location": "Ubicación",
+        "locationPlaceholder": "Ingresa tu ubicación",
+        "yearsOld": "{{age}} años",
+        "memberSince": "Miembro desde {{date}}",
+        "editProfile": "Editar Perfil",
+        "logoutTitle": "Cerrar Sesión",
+        "logoutMessage": "¿Estás seguro de que quieres cerrar sesión?"
+    },
+    "index": {
+        "loading": "Cargando tu perfil..."
+    }
+}
