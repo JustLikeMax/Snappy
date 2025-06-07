@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+bun.lockb
 
 # Expo
 .expo/
@@ -25,6 +26,7 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+bun-debug.*
 
 # macOS
 .DS_Store

@@ -2,18 +2,30 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Modern Tab Design ✨
+
+The app features a modern, professional tab bar design with:
+
+- **Floating Tab Bar**: Rounded, floating design with glassmorphism effects
+- **Smooth Animations**: Spring-based animations for tab interactions
+- **Enhanced Haptic Feedback**: Subtle haptic feedback on iOS devices
+- **Dynamic Icons**: Icons scale and animate when selected
+- **Professional Typography**: Enhanced font weights and letter spacing
+- **Dark/Light Mode Support**: Optimized colors for both themes
+- **Improved Accessibility**: Better contrast ratios and touch targets
+
 ## Get started
 
 1. Install dependencies
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. Start the app
 
    ```bash
-   npx expo start
+   bunx expo start
    ```
 
 In the output, you'll find options to open the app in a
@@ -30,7 +42,7 @@ You can start developing by editing the files inside the **app** directory. This
 When you're ready, run:
 
 ```bash
-npm run reset-project
+bun run reset-project
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
