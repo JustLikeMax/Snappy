@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import * as FileSystem from 'expo-file-system';
+import { User } from './AuthService';
 
 const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || 'https://yrqrgqiqvlbsipohwhig.supabase.co';
 const supabaseAnonKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlycXJncWlxdmxic2lwb2h3aGlnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkzMTAyNDYsImV4cCI6MjA2NDg4NjI0Nn0.EEnTk07F4OAxx-n0TFqp52PNRFCse3vn1Js3Sr0tvJw';
@@ -13,7 +14,7 @@ export class SupabaseStorageService {
    * @param userId - The user's ID to create a unique filename
    * @param imageUri - The local image URI from image picker
    * @param options - Upload options
-   * @returns Promise<string> - The public URL of the uploaded image
+   * @returns Promise<{imageUrl: string, user: User}> - The public URL of the uploaded image and updated user data
    */  static async uploadProfilePicture(
     userId: number, 
     imageUri: string,
@@ -22,7 +23,7 @@ export class SupabaseStorageService {
       maxWidth?: number;
       maxHeight?: number;
     } = {}
-  ): Promise<string> {
+  ): Promise<{imageUrl: string, user: User}> {
     try {
       const { quality = 0.8, maxWidth = 1024, maxHeight = 1024 } = options;
       
@@ -108,10 +109,15 @@ export class SupabaseStorageService {
         }
         throw new Error(errorData.error || `Upload failed: ${response.status} ${response.statusText}`);
       }
-      
-      const result = await response.json();
+        const result = await response.json();
       console.log('Profile picture uploaded successfully:', result.imageUrl);
-      return result.imageUrl;
+      console.log('Updated user data:', result.user);
+      
+      // Return both the image URL and the updated user data
+      return {
+        imageUrl: result.imageUrl,
+        user: result.user
+      };
       
     } catch (error) {
       console.error('Error uploading profile picture:', error);

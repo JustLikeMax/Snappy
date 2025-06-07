@@ -25,6 +25,7 @@ interface AuthContextType {
     updateProfile: (
         data: Partial<User> & { profile_image_url?: string }
     ) => Promise<void>;
+    setUser: (user: User | null) => void;
     error: string | null;
     clearError: () => void;
 }
@@ -59,8 +60,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
                 const userData = await AuthService.getCurrentUser();
                 setUser(userData);
             }
-        } catch (error) {
+        } catch (authError) {
             // Token might be expired or invalid
+            console.warn("Auth check failed:", authError);
             await AuthService.removeToken();
             setUser(null);
         } finally {
@@ -141,7 +143,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
             throw error;
         }
     };
-
     const value: AuthContextType = {
         user,
         isLoading,
@@ -150,6 +151,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         register,
         logout,
         updateProfile,
+        setUser,
         error,
         clearError,
     };

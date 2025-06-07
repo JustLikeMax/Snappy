@@ -2,10 +2,11 @@ import * as Haptics from 'expo-haptics';
 import * as ImagePicker from 'expo-image-picker';
 import { useState } from 'react';
 import { Alert } from 'react-native';
+import { User } from '../services/AuthService';
 import { SupabaseStorageService } from '../services/SupabaseService';
 
 interface UseProfileImageOptions {
-  onSuccess?: (imageUrl: string) => void;
+  onSuccess?: (imageUrl: string, user: User) => void;
   onError?: (error: Error) => void;
   maxWidth?: number;
   maxHeight?: number;
@@ -65,10 +66,8 @@ export function useProfileImage(options: UseProfileImageOptions = {}) {
           // Simulate upload progress (since we can't track actual progress with current implementation)
           progressInterval = setInterval(() => {
             setUploadProgress(prev => Math.min(prev + 10, 90));
-          }, 100);
-
-          // Upload new profile picture to Supabase with optimized settings
-          const imageUrl = await SupabaseStorageService.uploadProfilePicture(
+          }, 100);          // Upload new profile picture to Supabase with optimized settings
+          const uploadResult = await SupabaseStorageService.uploadProfilePicture(
             userId, 
             result.assets[0].uri,
             {
@@ -76,11 +75,13 @@ export function useProfileImage(options: UseProfileImageOptions = {}) {
               maxWidth,
               maxHeight
             }
-          );          clearInterval(progressInterval);
+          );
+
+          clearInterval(progressInterval);
           setUploadProgress(100);
 
           Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-          onSuccess?.(imageUrl);
+          onSuccess?.(uploadResult.imageUrl, uploadResult.user);
           
         } catch (uploadError) {
           if (progressInterval) {
@@ -153,10 +154,8 @@ export function useProfileImage(options: UseProfileImageOptions = {}) {
           // Simulate upload progress
           progressInterval = setInterval(() => {
             setUploadProgress(prev => Math.min(prev + 10, 90));
-          }, 100);
-
-          // Upload new profile picture
-          const imageUrl = await SupabaseStorageService.uploadProfilePicture(
+          }, 100);          // Upload new profile picture
+          const uploadResult = await SupabaseStorageService.uploadProfilePicture(
             userId, 
             result.assets[0].uri,
             {
@@ -170,7 +169,7 @@ export function useProfileImage(options: UseProfileImageOptions = {}) {
           setUploadProgress(100);
 
           Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
-          onSuccess?.(imageUrl);
+          onSuccess?.(uploadResult.imageUrl, uploadResult.user);
           
         } catch (uploadError) {
           if (progressInterval) {

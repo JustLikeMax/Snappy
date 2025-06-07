@@ -24,14 +24,22 @@ import { ProfileSettingsPreview } from "@/components/profile/ProfileSettingsPrev
 import { SettingsModal } from "@/components/profile/SettingsModal";
 
 export default function ProfileScreen() {
-    const { user, logout } = useAuth();
+    const { user, logout, setUser } = useAuth();
     const { isDark, themeMode, setThemeMode } = useTheme();
     const { changeLanguage } = useI18n();
     const {
         isUploading: profileImageLoading,
         uploadProgress,
         showImagePicker,
-    } = useProfileImage();
+    } = useProfileImage({
+        onSuccess: (imageUrl: string, updatedUser: any) => {
+            // Update the user context with the complete updated user data
+            setUser(updatedUser);
+        },
+        onError: (error: Error) => {
+            console.error("Profile image upload error:", error);
+        },
+    });
 
     // Profile form management
     const {
