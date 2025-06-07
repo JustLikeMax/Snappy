@@ -41,6 +41,8 @@ export function HapticTab(props: BottomTabBarButtonProps) {
             paddingVertical: 8,
           }
         ]}
+        android_ripple={null}
+        pressColor="transparent"
         onPressIn={(ev) => {
           if (process.env.EXPO_OS === 'ios') {
             // Add a more subtle haptic feedback
