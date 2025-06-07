@@ -6,34 +6,34 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 The app features a modern, professional tab bar design with:
 
-- **Floating Tab Bar**: Rounded, floating design with glassmorphism effects
-- **Smooth Animations**: Spring-based animations for tab interactions
-- **Enhanced Haptic Feedback**: Subtle haptic feedback on iOS devices
-- **Dynamic Icons**: Icons scale and animate when selected
-- **Professional Typography**: Enhanced font weights and letter spacing
-- **Dark/Light Mode Support**: Optimized colors for both themes
-- **Improved Accessibility**: Better contrast ratios and touch targets
+-   **Floating Tab Bar**: Rounded, floating design with glassmorphism effects
+-   **Smooth Animations**: Spring-based animations for tab interactions
+-   **Enhanced Haptic Feedback**: Subtle haptic feedback on iOS devices
+-   **Dynamic Icons**: Icons scale and animate when selected
+-   **Professional Typography**: Enhanced font weights and letter spacing
+-   **Dark/Light Mode Support**: Optimized colors for both themes
+-   **Improved Accessibility**: Better contrast ratios and touch targets
 
 ## Get started
 
 1. Install dependencies
 
-   ```bash
-   bun install
-   ```
+    ```bash
+    bun install
+    ```
 
 2. Start the app
 
-   ```bash
-   bunx expo start
-   ```
+    ```bash
+    bunx expo start
+    ```
 
 In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+-   [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+-   [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+-   [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+-   [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
@@ -51,12 +51,12 @@ This command will move the starter code to the **app-example** directory and cre
 
 To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+-   [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+-   [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
 ## Join the community
 
 Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+-   [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+-   [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
